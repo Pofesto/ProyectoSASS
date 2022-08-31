@@ -1,33 +1,12 @@
-@import url(_base.scss);
-div {
+body {
+  background-color: antiquewhite; }
+
+.caja {
   width: 100px;
   height: 100px;
-  background-color: lightblue;
-  border: 5px solid black;
-  font-size: medium;
-  font-family: monospace;
-  color: darkred;
-  font-weight: 700;
-  text-align: center;
-  margin: auto; }
+  border: 10px solid black; }
 
-p {
-  color: black;
-  font-size: 2rem;
-  font-family: monospace; }
-
-p {
-  color: blue;
-  font-size: 3rem;
-  font-family: monospace; }
-
-article, div {
-  border: 10px solid black;
-  box-shadow: 10px 10px black;
-  width: 100px;
-  height: 100px; }
-
-div {
-  color: blue; }
+.caja {
+  background-color: blue; }
 
 /*# sourceMappingURL=style.css.map */

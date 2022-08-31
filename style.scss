@@ -1,52 +1,5 @@
-@import url(_base.scss);
-
-
-
-div {
-    width: 100px;
-    height: 100px;
-    background-color: lightblue;
-    border: 5px solid black;
-    font-size: medium;
-    font-family: monospace;
-    color: darkred;
-    font-weight: 700;
-    text-align: center;
-    margin: auto;
-}
-
-$nombre-variable: black;
-$tamaño-texto: 2rem;
-$fuente-texto: monospace;
-
-p {
-    color: $nombre-variable;
-    font-size: $tamaño-texto;
-    font-family: $fuente-texto;
-}
-
-@mixin nombreMixin ($color-Fuente : red, $tamaño-Fuente : 2rem, 
-                    $familia-fuente : monospace) {
-    color: $color-Fuente;
-    font-size: $tamaño-Fuente;
-    font-family: $familia-fuente;
-}
-
-p {
-    @include nombreMixin(blue, 3rem);
-}
-
-article {
-    border: 10px solid black;
-    box-shadow: 10px 10px black;
-    width: 100px;
-    height: 100px;
-}
-
-div {
-    @extend article;
-    color: blue;
-}
-
-
-
+@import "base/base";
+@import "module/module";
+@import "theme/theme";
+@import "layout/layout";
+@import "state/state";
